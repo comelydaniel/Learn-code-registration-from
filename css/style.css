@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex-form {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-image: url(../img/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    padding: 30px;
+}
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    color: #ffff;
+    padding-left: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.intro-section h1 {
+    font-weight: 700;
+    width: 90%;
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.form-section {
+    width: 45%;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 50px;
+}
+
+.form-section .form {
+    width: 100%;
+    min-height: 70vh;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 40px 20px;
+    background: #ffff;
+}
+
+#fname, #lname, #email, #password, #button {
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+}
+
+.form-section .price {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    background: hsl(248,32%, 49%);
+    color: #ffff;
+}
+
+#button {
+    background-color: hsl(154, 59%, 51%);
+    border: 1px solid transparent;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.form-section .price p {
+    text-align: center;
+}
+
+.form-section .price p .bold-note {
+    font-weight: 600;
+}
+
+.form p {
+    text-align: center;
+    font-weight: 400;
+    color: hsl(246, 25%, 77%);
+}
+
+.form p .red-note {
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+
+@media (max-width: 426px) {
+    .flex-form {
+        flex-direction: column;
+        background-image: url(../img/bg-intro-mobile.png);
+    }
+
+    .intro-section, .form-section{
+        width: 100%;
+    }
+
+    .intro-section {
+        padding: 0;
+        width: 85%;
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    .intro-section h1 {
+        font-size: 24px;
+    }
+
+    .form-section .price p {
+        width: 60%;
+        margin-left: 60px;
+    }
+
+    .form p {
+        font-size: 13px;
+    }
+}
